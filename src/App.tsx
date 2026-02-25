@@ -11,55 +11,55 @@ import { Sparkles, Send, RefreshCw, Volume2, VolumeX } from 'lucide-react';
 const PREDICTIONS = [
   // 1. Túi tiền & Sự nghiệp
   { text: "2026: Ví dày thêm, nỗi buồn mất tích không dấu vết.", lucky: true, category: 'money' },
-  { text: "Đau đầu vì giàu, mệt mỏi vì đếm tiền mỏi tay.", lucky: true, category: 'money' },
-  { text: "Sếp tăng lương... trong mơ (hoặc thật đấy!).", lucky: true, category: 'money' },
-  { text: "Deadline tự biết sợ mà chạy mất tích khỏi đời bạn.", lucky: true, category: 'money' },
-  { text: "Tài khoản 'ting ting', quên luôn người cũ.", lucky: true, category: 'money' },
+  { text: "Bạn sẽ đau đầu vì giàu, mệt mỏi vì đếm tiền mỏi tay.", lucky: true, category: 'money' },
+  { text: "Sếp sẽ tăng lương cho bạn ngay trong năm nay!", lucky: true, category: 'money' },
+  { text: "Deadline năm nay sẽ tự biết sợ mà chạy mất tích.", lucky: true, category: 'money' },
+  { text: "Tài khoản 'ting ting', giúp bạn quên luôn người cũ.", lucky: true, category: 'money' },
 
   // 2. Tình duyên & Mối quan hệ
-  { text: "Hết kiếp 'Near You', chuẩn bị tinh thần thoát ế!", lucky: true, category: 'love' },
-  { text: "Tin nhắn người cũ: Đừng mở, là thử thách đấy!", lucky: false, category: 'love' },
-  { text: "Gặp chân ái khi đang xếp hàng mua trà sữa.", lucky: true, category: 'love' },
-  { text: "Đánh phấn không đánh ghen, yêu mình trước hết.", lucky: false, category: 'love' },
-  { text: "Crush 'like' ảnh cũ: Tín hiệu xanh lè cho bạn!", lucky: true, category: 'love' },
+  { text: "Hết kiếp độc thân, chuẩn bị tinh thần thoát ế thành công!", lucky: true, category: 'love' },
+  { text: "Tin nhắn người cũ: Đừng mở, đó là thử thách lòng kiên nhẫn.", lucky: false, category: 'love' },
+  { text: "Bạn sẽ gặp chân ái khi đang xếp hàng mua trà sữa.", lucky: true, category: 'love' },
+  { text: "Hãy yêu bản thân mình trước khi bắt đầu yêu một ai đó.", lucky: false, category: 'love' },
+  { text: "Crush sẽ lỡ tay 'like' ảnh cũ: Tín hiệu xanh lè cho bạn!", lucky: true, category: 'love' },
 
   // 3. Lối sống & Chữa lành
-  { text: "2026: Vibe chữa lành, thảnh thơi, không drama.", lucky: true, category: 'healing' },
-  { text: "Ăn Tết thả ga, vẫn đẹp theo cách riêng của bạn.", lucky: false, category: 'healing' },
-  { text: "Du lịch thả ga, hộ chiếu hết chỗ đóng dấu.", lucky: true, category: 'healing' },
-  { text: "Ngủ không cần báo thức mà tiền vẫn về túi.", lucky: true, category: 'healing' },
-  { text: "Việc ít lương ổn, quan trọng là bạn thấy vui!", lucky: false, category: 'healing' },
+  { text: "2026: Một năm đầy vibe chữa lành, thảnh thơi, không drama.", lucky: true, category: 'healing' },
+  { text: "Ăn Tết thả ga, bạn vẫn luôn đẹp theo cách riêng của mình.", lucky: false, category: 'healing' },
+  { text: "Năm nay bạn sẽ đi du lịch đến mức hộ chiếu hết chỗ đóng dấu.", lucky: true, category: 'healing' },
+  { text: "Bạn sẽ sở hữu khả năng ngủ không cần báo thức mà vẫn giàu.", lucky: true, category: 'healing' },
+  { text: "Việc ít lương ổn, quan trọng nhất là bạn luôn thấy vui vẻ.", lucky: false, category: 'healing' },
 
   // 4. Hài hước & Độc lạ
-  { text: "2026: Thành idol Tóp Tóp nhờ video vô tri nhất.", lucky: false, category: 'funny' },
-  { text: "Cầm tấm thẻ trên tay: Căn cước hay Thẻ đen quyền lực?", lucky: false, category: 'funny' },
-  { text: "Trúng số... lượt lên bảng hoặc deadline dí.", lucky: false, category: 'funny' },
-  { text: "Đừng hỏi cưới xin, hãy hỏi bao giờ lì xì.", lucky: false, category: 'funny' },
-  { text: "Khỏe như voi, ăn ít như mèo (hy vọng thế!).", lucky: false, category: 'funny' },
+  { text: "2026: Bạn sẽ thành idol Tóp Tóp nhờ một video vô tri nhất.", lucky: false, category: 'funny' },
+  { text: "Cầm tấm thẻ trên tay: Căn cước hay Thẻ đen quyền lực đây?", lucky: false, category: 'funny' },
+  { text: "Bạn sẽ trúng số... nhưng là trúng số lượt bị gọi lên bảng.", lucky: false, category: 'funny' },
+  { text: "Đừng hỏi bao giờ cưới, hãy hỏi bao giờ được nhận lì xì.", lucky: false, category: 'funny' },
+  { text: "Năm nay bạn sẽ khỏe như voi nhưng lại ăn ít như mèo.", lucky: false, category: 'funny' },
 
   // 5. Hệ Tâm Linh & Đu Idol
-  { text: "Săn được vé VVIP idol không cần nhân phẩm cao.", lucky: true, category: 'mystical' },
-  { text: "Điều bạn mong cầu sẽ tự tìm đến gõ cửa nhà.", lucky: true, category: 'mystical' },
-  { text: "Idol có tin vui, bạn trúng thưởng lightstick.", lucky: true, category: 'mystical' },
-  { text: "Đón 'vợ/chồng' quốc tế về diễn ngay tại sân bay.", lucky: true, category: 'mystical' },
+  { text: "Bạn sẽ săn được vé VVIP của idol mà không cần nhân phẩm cao.", lucky: true, category: 'mystical' },
+  { text: "Những gì bạn mong cầu bấy lâu nay sẽ tự tìm đến gõ cửa.", lucky: true, category: 'mystical' },
+  { text: "Idol sẽ có tin vui, và bạn cũng sẽ trúng thưởng lightstick.", lucky: true, category: 'mystical' },
+  { text: "Bạn sẽ đón 'vợ/chồng' quốc tế về diễn ngay tại sân bay.", lucky: true, category: 'mystical' },
 
   // 6. Năng lượng Gen Z
-  { text: "Sáng hướng nội, tối hướng ngoại, lương vào túi.", lucky: true, category: 'genz' },
-  { text: "Tìm thấy quán cafe chân ái: Wi-Fi mạnh, không hỏi cưới.", lucky: true, category: 'genz' },
-  { text: "Nhìn thấu 'red flag', né drama chuyên nghiệp.", lucky: true, category: 'genz' },
-  { text: "Không overthinking, chỉ over-earning vượt mong đợi.", lucky: true, category: 'genz' },
+  { text: "Sáng hướng nội, tối hướng ngoại, lương chảy thẳng vào túi.", lucky: true, category: 'genz' },
+  { text: "Tìm thấy quán cafe chân ái: Wi-Fi mạnh và không ai hỏi cưới.", lucky: true, category: 'genz' },
+  { text: "Bạn sẽ nhìn thấu 'red flag' và né tránh drama chuyên nghiệp.", lucky: true, category: 'genz' },
+  { text: "Năm nay không overthinking, chỉ over-earning vượt mong đợi.", lucky: true, category: 'genz' },
 
   // 7. Sức khỏe & Sắc đẹp
-  { text: "Nhan sắc 2026: Tăng vọt, đứng đâu cũng là tâm điểm.", lucky: true, category: 'beauty' },
-  { text: "Tập gym 2 buổi, vibe vẫn chuẩn người mẫu.", lucky: false, category: 'beauty' },
-  { text: "Da sạch mụn, bụng không mỡ, ví phình to.", lucky: true, category: 'beauty' },
-  { text: "Tìm thấy outfit đỉnh, chiếm trọn spotlight khung hình.", lucky: true, category: 'beauty' },
+  { text: "Chỉ số nhan sắc 2026: Tăng vọt, đứng đâu cũng là tâm điểm.", lucky: true, category: 'beauty' },
+  { text: "Tập gym được 2 buổi đầu năm, nhưng vibe vẫn chuẩn người mẫu.", lucky: false, category: 'beauty' },
+  { text: "Năm nay: Da sạch mụn, bụng không mỡ, chỉ có ví là phình to.", lucky: true, category: 'beauty' },
+  { text: "Bạn sẽ tìm thấy bộ outfit đỉnh nhất, chiếm trọn spotlight.", lucky: true, category: 'beauty' },
 
   // 8. Công nghệ & AI
-  { text: "Có AI làm hộ mọi deadline khó nhằn nhất.", lucky: true, category: 'tech' },
-  { text: "Mạng luôn căng đét vào lúc quan trọng nhất.", lucky: true, category: 'tech' },
-  { text: "Lên xu hướng TikTok nhờ khoảnh khắc vô tri đáng yêu.", lucky: true, category: 'tech' },
-  { text: "Pin điện thoại bền như ý chí kiếm tiền của bạn.", lucky: true, category: 'tech' },
+  { text: "Bạn sẽ có một con AI làm hộ mọi deadline khó nhằn nhất.", lucky: true, category: 'tech' },
+  { text: "Mạng luôn căng đét vào những lúc quan trọng nhất cuộc đời.", lucky: true, category: 'tech' },
+  { text: "Lên xu hướng TikTok nhờ một khoảnh khắc vô tri cực đáng yêu.", lucky: true, category: 'tech' },
+  { text: "Pin điện thoại của bạn sẽ bền như ý chí kiếm tiền của bạn.", lucky: true, category: 'tech' },
 ];
 
 const SOUNDS = {
@@ -207,11 +207,6 @@ export default function App() {
             className={`crystal-ball ${isCalculating ? 'calculating' : ''}`}
             animate={isCalculating ? { scale: [1, 1.1, 1] } : {}}
           >
-            {/* Realistic Reflections & Fractures */}
-            <div className="ball-highlight"></div>
-            <div className="ball-fractures"></div>
-            <div className="ball-inner-glow"></div>
-            
             <div className="smoke">
               <div className="smoke-particle" style={{ animationDelay: '0s' }}></div>
               <div className="smoke-particle" style={{ animationDelay: '2s' }}></div>
@@ -219,37 +214,35 @@ export default function App() {
             </div>
             
             {/* Inner Glow */}
-            <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-purple-500/10 to-transparent pointer-events-none"></div>
+            <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-purple-500/20 to-transparent pointer-events-none"></div>
           </motion.div>
-
-          {/* Wooden Stand */}
-          <div className="crystal-ball-stand">
-            <div className="stand-top"></div>
-            <div className="stand-middle"></div>
-            <div className="stand-bottom"></div>
-          </div>
 
           {/* Prediction Overlay */}
           <AnimatePresence>
             {prediction && (
               <motion.div
-                initial={{ opacity: 0, scale: 0.8, y: 20 }}
-                animate={{ opacity: 1, scale: 1, y: 0 }}
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.8 }}
-                className="absolute top-full mt-8 w-full text-center"
+                className="fixed inset-0 flex items-center justify-center z-[100] p-4 bg-black/60 backdrop-blur-sm"
               >
-                <div className="glass p-6 rounded-2xl border-yellow-500/30">
-                  <p className="text-purple-200 text-sm mb-2 italic">Lời tiên tri cho {name}:</p>
-                  <h2 className="text-xl md:text-2xl font-serif text-yellow-400 leading-relaxed">
+                <motion.div 
+                  initial={{ y: 20 }}
+                  animate={{ y: 0 }}
+                  className="glass p-8 rounded-3xl border-yellow-500/30 max-w-lg w-full text-center relative"
+                >
+                  <p className="text-purple-200 text-sm mb-4 italic tracking-wider">Lời tiên tri cho {name}:</p>
+                  <h2 className="text-2xl md:text-3xl font-serif text-yellow-400 leading-relaxed mb-8 glow-text">
                     "{prediction}"
                   </h2>
                   <button 
                     onClick={handleReset}
-                    className="mt-4 text-xs text-purple-300 hover:text-yellow-400 flex items-center justify-center gap-1 mx-auto transition-colors"
+                    className="group bg-gradient-to-r from-yellow-600 to-yellow-400 text-black font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-yellow-500/20 transition-all active:scale-95 flex items-center justify-center gap-2 mx-auto"
                   >
-                    <RefreshCw size={12} /> Thử lại lần nữa
+                    <RefreshCw size={18} className="group-hover:rotate-180 transition-transform duration-500" /> 
+                    Thử lại lần nữa
                   </button>
-                </div>
+                </motion.div>
               </motion.div>
             )}
           </AnimatePresence>
